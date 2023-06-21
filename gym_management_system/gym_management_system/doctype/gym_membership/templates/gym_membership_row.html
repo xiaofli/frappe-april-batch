@@ -1,0 +1,77 @@
+<div id="page-style">
+	<style>
+		#page-style .container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f5f5f5;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		#page-style .button {
+			display: inline-block;
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 4px;
+			border: none;
+			cursor: pointer;
+			background-color: #4caf50;
+			color: #ffffff;
+		}
+
+		#page-style .button:hover {
+			background-color: #45a049;
+		}
+
+		#page-style .button:active {
+			background-color: #3e8e41;
+		}
+
+		#page-style .link {
+			color: #333333;
+			text-decoration: none;
+		}
+
+		#page-style .link:hover {
+			text-decoration: underline;
+		}
+	</style>
+
+<div id="membership-subscription-page" class="container">
+	<div>
+		<a class="link" href="{{ doc.route }}">{{ doc.plan_name }}</a>
+	</div>
+	<div>
+		<button class="button" onclick="onSubscribe('{{ doc.name }}')">Subscribe</button>
+	</div>
+</div>
+
+<script>
+	function onSubscribe(plan_name) {
+		console.log(plan_name);
+		url = "app/gym-membership-subscription"
+		window.open(url, '_blank').focus();
+		// frappe.call({
+		// 	method: "gym_management_system.gym_management_system.doctype.gym_membership_subscription.gym_membership_subscription.new_membership_subscription",
+		// 	args: {
+		// 		"user_id": frappe.user_id,
+		// 		"plan": plan_name
+		// 	},
+		// 	success: function(r) {
+		// 		alert("Succeed");
+		// 	},
+		// 	callback: function(r) {
+		// 		console.log(r);
+		// 	}
+		// });
+	}
+</script>
+
+</div>

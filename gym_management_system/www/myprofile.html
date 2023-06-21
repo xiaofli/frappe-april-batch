@@ -1,0 +1,21 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="plan-info">
+    <h1>My Subscribed Plan</h1>
+
+
+    {% if membership != '' %}
+    <h2>Membership: {{membership}} </h2>
+    {% endif %}
+
+
+    {% if professional_plan != "" %}
+    <h2>Professional Plan: {{ professional_plan }}</h2>
+    {% endif %}
+
+    {% if workout_plan != '' %}
+    <h2>Workout Plan: {{workout_plan}}</h2>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-06-20 15:19:10.503857",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "user",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "modified": "2023-06-20 15:47:30.876690",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "fitness journey report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Fitness Metrics",
+ "report_name": "fitness journey report",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Gym Admin"
+  },
+  {
+   "role": "Gym Member"
+  },
+  {
+   "role": "Gym Trainer"
+  }
+ ]
+}

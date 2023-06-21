@@ -7,6 +7,9 @@ app_description = "Gym"
 app_email = "x.li@gmail.com"
 app_license = "MIT"
 
+wedsite_catch_all = "not_found"
+
+
 # Includes in <head>
 # ------------------
 

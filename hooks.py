@@ -1,0 +1,1 @@
+wedsite_catch_all = "not_found"

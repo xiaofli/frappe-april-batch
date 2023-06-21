@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{plan_name}",
+ "creation": "2023-06-13 11:41:52.946436",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "monthly_price",
+  "annual_price",
+  "status",
+  "plan_details",
+  "image",
+  "route",
+  "trainer"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "monthly_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monthly Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "annual_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Annual Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_details",
+   "fieldtype": "Small Text",
+   "label": "Plan Details"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "User"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-14 15:57:24.100198",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Professional Plan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "route": "professional",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
